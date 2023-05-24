@@ -1,7 +1,7 @@
 {
   "colors": {
-    "background": "#232323",
-    "selection": "#006a6a",
-    "text": "#fbf8f3"
+    "main": "#2a2a2a",
+    "primary": "#d2232a",
+    "secondary": "#e0e0e0"
   }
 }
