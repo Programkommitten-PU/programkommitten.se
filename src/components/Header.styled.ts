@@ -14,9 +14,11 @@ export const Wrapper = styled.div`
 
 export const PagesMenu = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  gap: 37px;
 
   margin-right: 20px;
+
+  white-space: nowrap;
 
   width: 541px;
   height: 37px;
@@ -30,6 +32,7 @@ export const PageItem = styled.p`
 export const Logo = styled(PU)`
   height: 97px;
   width: 128px;
+  flex: none;
 
   margin-left: 20px;
 `
