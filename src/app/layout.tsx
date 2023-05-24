@@ -1,6 +1,5 @@
-import { Open_Sans } from 'next/font/google'
-
-const openSans = Open_Sans({ subsets: ['latin'] })
+import { GlobalStyle } from './themes/GlobalStyle'
+import { ThemeProvider } from './themes/ThemeProvider'
 
 export const metadata = {
   title: 'Programkomittén PU',
@@ -9,7 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={openSans.className}>{children}</body>
+      <ThemeProvider children={children} />
     </html>
   )
 }
