@@ -1,5 +1,5 @@
 const Events = () => {
-  return <main>Om oss</main>
+  return <main>Arrangemang</main>
 }
 
 export default Events

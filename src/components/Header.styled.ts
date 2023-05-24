@@ -1,11 +1,13 @@
 import { styled } from 'styled-components'
 import PU from '@/drawables/PU.svg'
+import Link from 'next/link'
 
 export const Wrapper = styled.div`
   position: absolute;
   display: flex;
 
   justify-content: space-between;
+  align-items: center;
   margin-top: 10px;
 
   height: 50px;
@@ -24,7 +26,10 @@ export const PagesMenu = styled.div`
   height: 37px;
 `
 
-export const PageItem = styled.p`
+export const PageItem = styled(Link)`
+  color: ${({ theme }) => theme.colors.secondary};
+  text-decoration: none;
+
   font-weight: bold;
   font-size: 22px;
 `
@@ -34,5 +39,8 @@ export const Logo = styled(PU)`
   width: 128px;
   flex: none;
 
+  cursor: pointer;
+
+  margin-top: 40px;
   margin-left: 20px;
 `

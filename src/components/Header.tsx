@@ -1,15 +1,19 @@
 'use client'
+import Link from 'next/link'
 import { Logo, PageItem, PagesMenu, Wrapper } from './Header.styled'
 
 export const Header = () => {
   return (
     <Wrapper>
-      <Logo />
+      <Link href="/">
+        <Logo />
+      </Link>
+
       <PagesMenu>
-        <PageItem>Om oss</PageItem>
-        <PageItem>Arrangemang</PageItem>
-        <PageItem>Kontakt</PageItem>
-        <PageItem>Pateter</PageItem>
+        <PageItem href="/about">Om oss</PageItem>
+        <PageItem href="/events">Arrangemang</PageItem>
+        <PageItem href="/contact">Kontakt</PageItem>
+        <PageItem href="/pateter">Pateter</PageItem>
       </PagesMenu>
     </Wrapper>
   )
