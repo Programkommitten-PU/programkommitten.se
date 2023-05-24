@@ -1,6 +1,6 @@
-import 'styled-components/macro'
+import 'styled-components/'
 import { ThemeType } from './ThemeProvider'
 
-declare module 'styled-components/macro' {
+declare module 'styled-components/' {
   export interface DefaultTheme extends ThemeType {}
 }

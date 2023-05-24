@@ -1,5 +1,4 @@
-import { GlobalStyle } from './themes/GlobalStyle'
-import { ThemeProvider } from './themes/ThemeProvider'
+import { ThemeProvider } from '../themes/ThemeProvider'
 
 export const metadata = {
   title: 'Programkomittén PU',

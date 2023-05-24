@@ -1,5 +1,11 @@
+import { Header } from '@/components/Header'
+
 const Home = () => {
-  return <main>Programkommittén PU</main>
+  return (
+    <main>
+      <Header />
+    </main>
+  )
 }
 
 export default Home
