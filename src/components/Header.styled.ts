@@ -6,12 +6,18 @@ export const Wrapper = styled.div`
   position: absolute;
   display: flex;
 
+  left: 0;
+  top: 0;
+
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
 
-  height: 50px;
+  height: 130px;
   width: 100%;
+
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+
+  border-bottom: 3px solid ${({ theme }) => theme.colors.secondary};
 `
 
 export const PagesMenu = styled.div`
@@ -41,6 +47,12 @@ export const Logo = styled(PU)`
 
   cursor: pointer;
 
-  margin-top: 40px;
   margin-left: 20px;
+`
+
+export const Divider = styled.div`
+  height: 3px;
+  width: 100%;
+
+  background-color: ${({ theme }) => theme.colors.secondary};
 `
