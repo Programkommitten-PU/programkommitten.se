@@ -8,7 +8,6 @@ export const Header = () => {
       <Link href="/">
         <Logo />
       </Link>
-
       <PagesMenu>
         <PageItem href="/about">Om oss</PageItem>
         <PageItem href="/events">Arrangemang</PageItem>

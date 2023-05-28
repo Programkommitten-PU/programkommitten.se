@@ -3,7 +3,6 @@ import PU from '@/drawables/PU.svg'
 import Link from 'next/link'
 
 export const Wrapper = styled.div`
-  position: absolute;
   display: flex;
 
   left: 0;
